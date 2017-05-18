@@ -88,12 +88,13 @@ open class TwicketSegmentedControl: UIControl {
         }
     }
 
-    open var font: UIFont = UIFont.systemFont(ofSize: 15, weight: UIFontWeightMedium) {
+    open var font: UIFont = UIFont.systemFont(ofSize: 12) {
         didSet {
             updateLabelsFont(with: font)
         }
     }
 
+    
     open var isSliderShadowHidden: Bool = false {
         didSet {
             updateShadow(with: sliderBackgroundColor, hidden: isSliderShadowHidden)
